@@ -4,12 +4,12 @@ import java.io.IOException;
 
 public interface ProjectSpecification {
 
-    public abstract void saveFile();
-    public abstract void downloadFile();
-    public abstract void deleteFile(String path, int val);
-    public abstract void viewFile();
-    public abstract void createStorage(String path,int val);
-    public abstract void createFile(String path,int val);
-    public abstract void moveFile(String file,String target);
+    public abstract void saveFile(Object o,String path, int val) throws IOException;
+    public abstract void downloadFile(Object o,String path, int val) throws IOException;
+    public abstract void deleteFile(Object o,String path, int val) throws IOException;
+    public abstract void viewFile(Object o,String path, int val) throws IOException;
+    public abstract void createStorage(Object o,String path,int val) throws IOException;
+    public abstract void createFile(Object o,String path,int val) throws IOException;
+    public abstract void moveFile(Object o,String file,String target) throws IOException;
     
 }
